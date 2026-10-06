@@ -1,16 +1,55 @@
-# React + Vite
+# 📚 myDigitalBookshelf
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Modern JavaScript ve ReactJS ekosistemi kullanılarak geliştirilmiş, yerel depolama (LocalStorage) destekli kişisel kütüphane ve okuma takip uygulaması.
 
-Currently, two official plugins are available:
+> **Canlı Demo:** [mestansdigitalbookshelf.netlify.app](https://mestansdigitalbookshelf.netlify.app)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+---
 
-## React Compiler
+## 📸 Proje Ekran Görüntüsü
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+![myDigitalBookshelf Önizleme](./preview.png)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🚀 Proje Hakkında & Özellikler
+
+Bu proje, modern web geliştirme pratikleri doğrultusunda bileşen tabanlı (Component-based) mimariyle sıfırdan inşa edilmiştir:
+
+- **CRUD Operasyonları:**
+  - **Create (Ekleme):** Kitap adı, yazar, kategori, okuma durumu, puan ve kişisel inceleme notu ekleme.
+  - **Read (Listeleme):** Eklenen eserleri Tailwind CSS ızgara yapısında dinamik kartlar olarak listeleme.
+  - **Update (Güncelleme):** Mevcut kitapların bilgilerini ve inceleme notlarını modal aracılığıyla düzenleme.
+  - **Delete (Silme):** İstenmeyen kayıtları kütüphaneden güvenli şekilde kaldırma.
+- **Dinamik Arama & Filtreleme:** Kitap ve yazar adına göre gerçek zamanlı arama; türe göre kategorik filtreleme.
+- **Kalıcı Depolama (LocalStorage):** Sayfa yenilendiğinde verilerin kaybolmaması için tarayıcı hafızasıyla senkronize çalışma.
+- **Duyarlı Tasarım (Responsive):** Mobil, tablet ve masaüstü ekranlara uyumlu koyu (dark mode) arayüz.
+
+---
+
+## 🛠️ Kullanılan Teknolojiler
+
+- **Çatı:** ReactJS (Vite)
+- **Stil & Arayüz:** Tailwind CSS
+- **İkon Seti:** Lucide React
+- **Durum Yönetimi:** React Hooks (`useState`, `useEffect`)
+- **Yayınlama (Deployment):** Netlify & GitHub
+
+---
+
+## 💻 Kurulum & Yerel Çalıştırma
+
+Projeyi yerel makinenizde çalıştırmak için:
+
+```bash
+# Depoyu klonlayın
+git clone https://github.com/mestan4/myDigitalBookshelf.git
+
+# Proje dizinine girin
+cd myDigitalBookshelf
+
+# Bağımlılıkları yükleyin
+npm install
+
+# Geliştirici sunucusunu başlatın
+npm run dev
